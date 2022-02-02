@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Team Photos </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+    function rotateImages() {
+      var pics = document.getElementsByClassName("gallery-img")
+      console.log(pics)
+      Array.from(pics).forEach((pic) => {
+        var randomNum = Math.random() * 20 - 10
+        pic.style.setProperty("transform", `rotate(${randomNum}deg)`)
+        console.log(pic)
+      })
+      // pls don't roast me for putting the script inline, it's simple enough right heh
+    }
+  </script>
+  <body onload="rotateImages()">
+    <div id = "menu_bar" class = "top_menu">
+      <a href= "../index.html">
+        <img src="crc_pictures/crc.jpg" width='120' alt="CRC logo">
+      </a>
+      <div class = "top_menu-right">
+        <a href = "index.html">
+          <p>About</p>
+        </a>
+        <a href = "team.html">
+          <p>Team</p>
+        </a>
+        <a href = "competition.html">
+          <p>Events</p>
+        </a>
+        <a href = "sponsor.html">
+          <p>Sponsor</p>
+        </a>
+        <a href = "recruitment.html">
+          <p>Recruitment</p>
+        </a>
+        <a href = "gallery.html" class = "active">
+          <p>Gallery</p>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class='content'>
+      <h1 class='big-title'>Gallery</h1>
+    </div>
+      <div class='gallery'>
+
+        <img class='gallery-img' src="Teampics/inside.jpg"  alt="Picture of team inside a building">
+        <img class='gallery-img' src="Teampics/hike.jpg" alt="Team on a hike">
+        <img class='gallery-img' src="Teampics/present.jpg" alt="Subteam presenting robot">
+        <img class='gallery-img' src="Teampics/machine.jpg"  alt="People machining parts">
+
+        <img class='gallery-img' src="Teampics/box.jpg" alt="Box schematics for robot">
+        <img class='gallery-img' src="Teampics/outside.jpg"  alt="Team bonding outside">
+        <img class='gallery-img' src="Teampics/prototype.jpg" alt="Prototype for robot">
+
+        <img class='gallery-img' src="Teampics/seesaw.jpg"  alt="Picture of seesaw for the robot">
+        <img class='gallery-img' src="Teampics/receipt.jpg"  alt="Picture of a receipt">
+        <img class='gallery-img' src="Teampics/team.jpg" alt="Full team pic">
+
+        <img class='gallery-img' src="Teampics/quarter.jpg"  alt="Bruno giving quarter cards">
+        <img class='gallery-img' src="Teampics/quad.jpg"  alt="Us in the quad">
+        <img class='gallery-img' src="Teampics/kaitlyn.jpg"  alt="Kaitlyn team member">
+        <img class='gallery-img' src="Teampics/green.jpg" alt="Team bonding outside">
+      </div>
+    <hr>
+  </body>
+      </div>
+      <div class="footer">
+        <div style="display: flex; flex-direction: row;">
+          <div>
+            <p class="footer_title"> Follow Us</p>
+            <a href="https://www.facebook.com/cucombatrobotics/" target="_blank">
+              <p class="footer-text"><img src="crc_pictures/icons/fb.png"
+                  class='footer-logo' />Facebook</p>
+            </a>
+            <a href="https://www.instagram.com/cucombatrobotics/?hl=en"
+              target="_blank">
+              <p class="footer-text"><img src="crc_pictures/icons/insta.png"
+                  class='footer-logo' />Instagram</p>
+            </a>
+            <a href="https://www.linkedin.com/company/combat-robotics-at-cornell/"
+              target="_blank">
+              <p class="footer-text" style="margin-bottom: 20px;"><img
+                  src="crc_pictures/icons/linkedin.png"
+                  class='footer-logo' />Linkedin</p>
+            </a>
+          </div>
+          <div style="border-left: 4px solid white; margin-left: 20px">
+            <p class="footer_title">Contact Us</p>
+            <p class='footer-text'> <a
+                href="mailto:combatrobotics@cornell.edu">combatrobotics@cornell.edu</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="crc_pictures/white-logo.png" alt="">
+        </div>
+      </div>
+  </body>
+</html>
