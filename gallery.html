@@ -5,19 +5,9 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
   </head>
-  <script>
-    function rotateImages() {
-      var pics = document.getElementsByClassName("gallery-img")
-      console.log(pics)
-      Array.from(pics).forEach((pic) => {
-        var randomNum = Math.random() * 20 - 10
-        pic.style.setProperty("transform", `rotate(${randomNum}deg)`)
-        console.log(pic)
-      })
-      // pls don't roast me for putting the script inline, it's simple enough right heh
-    }
-  </script>
-  <body onload="rotateImages()">
+  <script src="./gallery-scrambler.js"></script>
+  
+  <body onload="rotateAndSetImages()">
     <div id = "menu_bar" class = "top_menu">
       <a href= "../index.html">
         <img src="crc_pictures/crc.jpg" width='120' alt="CRC logo">
@@ -49,23 +39,13 @@
     </div>
       <div class='gallery'>
 
-        <img class='gallery-img' src="Teampics/inside.jpg"  alt="Picture of team inside a building">
-        <img class='gallery-img' src="Teampics/hike.jpg" alt="Team on a hike">
-        <img class='gallery-img' src="Teampics/present.jpg" alt="Subteam presenting robot">
-        <img class='gallery-img' src="Teampics/machine.jpg"  alt="People machining parts">
+        <img class='gallery-img' src="" alt="Picture of team inside a building">
+        <img class='gallery-img' src="" alt="Team on a hike">
+        <img class='gallery-img' src="" alt="Subteam presenting robot">
+        <img class='gallery-img' src="" alt="People machining parts">
 
-        <img class='gallery-img' src="Teampics/box.jpg" alt="Box schematics for robot">
-        <img class='gallery-img' src="Teampics/outside.jpg"  alt="Team bonding outside">
-        <img class='gallery-img' src="Teampics/prototype.jpg" alt="Prototype for robot">
-
-        <img class='gallery-img' src="Teampics/seesaw.jpg"  alt="Picture of seesaw for the robot">
-        <img class='gallery-img' src="Teampics/receipt.jpg"  alt="Picture of a receipt">
-        <img class='gallery-img' src="Teampics/team.jpg" alt="Full team pic">
-
-        <img class='gallery-img' src="Teampics/quarter.jpg"  alt="Bruno giving quarter cards">
-        <img class='gallery-img' src="Teampics/quad.jpg"  alt="Us in the quad">
-        <img class='gallery-img' src="Teampics/kaitlyn.jpg"  alt="Kaitlyn team member">
-        <img class='gallery-img' src="Teampics/green.jpg" alt="Team bonding outside">
+        <img class='gallery-img' src="" alt="Box schematics for robot">
+        <img class='gallery-img' src="" alt="Team bonding outside">
       </div>
     <hr>
   </body>
