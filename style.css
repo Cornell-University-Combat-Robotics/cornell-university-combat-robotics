@@ -133,7 +133,7 @@ hr {
 }
 
 .gallery img {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
   flex-grow: 0fr;
   flex-shrink: 0fr;
