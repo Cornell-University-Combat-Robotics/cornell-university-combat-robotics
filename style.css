@@ -39,14 +39,14 @@ em {
   font-weight: 400;
   text-align: center;
   padding: 14px 16px;
-  color: rgb(128, 128, 128);
+  color: dimgray;
 }
 .top_menu-right {
   float: right;
   margin-right: 10%;
 }
 .top_menu-right a:link {
-  color: rgb(128, 128, 128);
+  color: dimgray;
   text-decoration: none;
 }
 .top_menu-right a:hover {
@@ -88,7 +88,7 @@ hr {
 }
 
 .red-gallery {
-  background-color: grey;
+  background-color: dimgray;
   color: white;
 }
 
@@ -474,7 +474,7 @@ video {
 }
 li.answer {
   font-size: 15px;
-  color: grey;
+  color: dimgray;
 }
 
 li {
