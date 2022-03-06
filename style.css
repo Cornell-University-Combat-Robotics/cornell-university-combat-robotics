@@ -94,9 +94,18 @@ hr {
 	color: white;
 }
 
+.team-leads-title {
+	/* background-color: rgb(152, 0, 0); */
+	border-radius: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	text-align: center;
+	/* color: white; */
+}
+
 .timeline {
-	padding-top: 15px;
-	margin-top: -50px;
+	padding-top: 0px;
+	margin-top: 0px;
 	border-left: 10px solid maroon;
 }
 
@@ -142,6 +151,12 @@ hr {
 	filter: drop-shadow(5px 5px 10px);
 }
 
+#team-info-and-list {
+	width: 300px;
+	flex-grow: 1;
+	padding: 20px;
+}
+
 #team-list ul {
 	list-style: none;
 	text-decoration: none;
@@ -153,6 +168,20 @@ hr {
 	margin: 30px;
 	margin-left: -40px;
 	border: 2px solid grey;
+	background-color: whitesmoke;
+	border-radius: 20px;
+}
+
+#team-list a {
+	text-decoration: none;
+}
+
+.team-list-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.subteam-picture {
 	border-radius: 20px;
 }
 
@@ -160,8 +189,18 @@ hr {
 	margin-top: -25px;
 	margin-bottom: 80px;
 	padding: 15px;
-	border: 3px solid grey;
-	border-radius: 10px;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	filter: drop-shadow(10px 10px 0px gainsboro);
+}
+
+.team-list-gallery img {
+	display: inline-block;
+	flex-grow: 1;
+	flex-basis: 800px;
+	width: 600px;
+	max-width: 100%;
+	object-fit: cover;
 }
 
 .pair-images img {
@@ -431,16 +470,6 @@ video {
 	max-width: 1200px;
 }
 
-.rounded-red-bg-title {
-	background-color: maroon;
-	color: white;
-	padding: 10px 20px;
-	margin-top: 20px;
-	border-radius: 10px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
 .sponsor-page-cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -477,4 +506,34 @@ li.answer {
 li {
 	list-style: none;
 	margin-right: 40px;
+}
+
+.refresh-button {
+	display: inline-block;
+	max-width: 75px;
+	max-height: 75px;
+	background-color: rgb(152, 0, 0);
+	border: 0px;
+	border-radius: 10px;
+	padding: 10px;
+	position: sticky;
+	top: 5%;
+	left: 93%;
+	z-index: 10;
+	margin-top: -150px; 
+}
+
+.refresh-button:hover {
+	cursor: pointer;
+}
+
+.refresh-button:active img {
+	transition: 0s;
+	transform: rotate(-360deg);
+}
+
+.refresh-button img {
+	transition: 0.5s;
+	width: 100%;
+	transform: rotate(0);
 }
