@@ -32,7 +32,9 @@ em {
 
 .top_menu {
 	overflow: hidden;
-	margin: 0px 0px 10px 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 42px;
 }
 .top_menu-right a {
 	float: left;
@@ -40,12 +42,11 @@ em {
 	font-family: Verdana;
 	font-weight: 400;
 	text-align: center;
-	padding: 14px 16px;
+	padding-right: 52px;
 	color: dimgray;
 }
 .top_menu-right {
 	float: right;
-	margin-right: 10%;
 }
 .top_menu-right a:link {
 	color: dimgray;
@@ -62,7 +63,7 @@ em {
 
 .top_menu img {
 	transition: 0.3s;
-	height: 80px;
+	height: 60px;
 	width: auto;
 }
 
@@ -522,7 +523,7 @@ li {
 	top: 5%;
 	left: 93%;
 	z-index: 10;
-	margin-top: -150px; 
+	margin-top: -150px;
 }
 
 .refresh-button:hover {
