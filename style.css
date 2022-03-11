@@ -32,9 +32,15 @@ em {
 
 .top_menu {
 	overflow: hidden;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	margin-top: -5px;
+	padding-bottom: 7.5px;
 	padding-left: 42px;
+	/* border-bottom: 3px solid lightgray; */
+	/* border-radius: 30px; */
+	/* top: 0px;
+	background-color: white
+	position: sticky; */
 }
 .top_menu-right a {
 	float: left;
@@ -43,8 +49,11 @@ em {
 	font-weight: 400;
 	text-align: center;
 	padding-right: 52px;
+	margin-top: -2.5px;
 	color: dimgray;
+	transition: 0.2s;
 }
+
 .top_menu-right {
 	float: right;
 }
@@ -154,29 +163,41 @@ hr {
 	filter: drop-shadow(5px 5px 10px);
 }
 
-#team-info-and-list {
-	width: 300px;
-	flex-grow: 1;
-	padding: 20px;
-}
-
-#team-list ul {
+#team-list {
 	list-style: none;
 	text-decoration: none;
-}
-
-#team-list li {
-	font-size: 1.5em;
-	padding: 10px;
-	margin: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-left: -40px;
-	border: 2px solid grey;
-	background-color: whitesmoke;
-	border-radius: 20px;
+	flex-wrap: wrap;
 }
 
 #team-list a {
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 10px;
+	max-width: 250px;
+	flex-grow: 1;
+	height: 100px;
+	background-color: white;
+	border-radius: 5px;
 	text-decoration: none;
+	text-align: center;
+	filter: drop-shadow(2px 2px 5px grey);
+	transition: 0.15s;
+}
+
+#team-list a:hover {
+	filter: drop-shadow(2px 2px 10px red);
+}
+
+#team-list img {
+	width: 25%;
+}
+
+#team-list a li {
+	width: 100%;
 }
 
 .team-list-gallery {
@@ -197,12 +218,11 @@ hr {
 	filter: drop-shadow(10px 10px 0px gainsboro);
 }
 
-.team-list-gallery img {
+.full-team-photo {
 	display: inline-block;
 	flex-grow: 1;
-	flex-basis: 800px;
-	width: 600px;
-	max-width: 100%;
+	width: 100%;
+	max-height: 500px;
 	object-fit: cover;
 }
 
