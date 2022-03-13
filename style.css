@@ -1,8 +1,4 @@
-@font-face {
-	font-family: Apercu;
-	src: url(./Apercu\ Regular.otf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400&display=swap');
 /* body {
 	background-color: white;
 	max-width: 1300px;
@@ -13,8 +9,8 @@
 body {
 	margin: 0px auto;
 	margin-top: 10px;
-	font-family: Apercu;
-	font-size: 18px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
 }
 
 .content {
