@@ -133,6 +133,10 @@ hr {
 	margin-bottom: 60px;
 }
 
+.mini-photo {
+	height: 3em;
+}
+
 .flex-gallery div {
 	width: 400px;
 	flex-grow: 1;
@@ -382,8 +386,9 @@ button.link {
 
 .team-bio {
 	text-align: left;
+	font-size: 0.9em;
 	padding: 10px;
-	height: 356.5px;
+	height: 266px;
 	transition: 0.5s;
 }
 

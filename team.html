@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <title>Team Info</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-<head>
-  <title> Team Info </title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-<body>
-  <div id="menu_bar" class="top_menu">
-    <a href="index.html">
-      <img src="crc_pictures/crc.jpg" width='120' alt="CRC logo">
-    </a>
-    <div class="top_menu-right">
+  <body>
+    <div id="menu_bar" class="top_menu">
       <a href="index.html">
-        <p>About</p>
+        <img src="crc_pictures/crc.jpg" width="120" alt="CRC logo" />
       </a>
-      <a href="team.html" class="active">
-        <p>Team</p>
-      </a>
-      <a href="competition.html">
-        <p>Events</p>
-      </a>
-      <a href="sponsor.html">
-        <p>Sponsor</p>
-      </a>
-      <a href="recruitment.html">
-        <p>Recruitment</p>
-      </a>
-      <a href="gallery.html">
-        <p>Gallery</p>
-      </a>
+      <div class="top_menu-right">
+        <a href="index.html">
+          <p>About</p>
+        </a>
+        <a href="team.html" class="active">
+          <p>Team</p>
+        </a>
+        <a href="competition.html">
+          <p>Events</p>
+        </a>
+        <a href="sponsor.html">
+          <p>Sponsor</p>
+        </a>
+        <a href="recruitment.html">
+          <p>Recruitment</p>
+        </a>
+        <a href="gallery.html">
+          <p>Gallery</p>
+        </a>
+      </div>
     </div>
-  </div>
-  
-  <div class='content'>
-    <h1 class='big-title'>Meet Our Team!</h1>
-    <img src="crc_pictures/fullteam2022.jpg" class='full-team-photo' alt="Full team photo">
-        <p> Our members come from a
-          variety of colleges and many different backgrounds. We pride ourselves
-          on
-          having a diverse and talented group that encourages friendships
-          outside of
-          the working environment.</p>
-        <h3>Learn More About Our Subteams:</h3>
-        <ul id='team-list'>
-            <a href="./kinetic.html">
-              <img src="crc_pictures/icons/electric.png" alt="">
-              <li>Kinetic</li>
-            </a>
-            <a href="./sportsman.html">
-              <img src="crc_pictures/icons/tech.png" alt="">
-              <li>Sportsman</li>
-            </a>
-            <a href="./firmware.html">
-              <img src="crc_pictures/icons/circuit.png" alt="">
-              <li>Firmware</li>
-            </a>
-            <a href="./biz.html">
-              <img src="crc_pictures/icons/camera-setting.png" alt="">
-              <li>Business & Media</li>
-            </a>
-        </ul>
-    <div id="pics">
-      <!--
+
+    <div class="content">
+      <h1 class="big-title">Meet Our Team!</h1>
+      <img
+        src="crc_pictures/fullteam2022.jpg"
+        class="full-team-photo"
+        alt="Full team photo"
+      />
+      <p>
+        Our members come from a variety of colleges and many different
+        backgrounds. We pride ourselves on having a diverse and talented group
+        that encourages friendships outside of the working environment.
+      </p>
+      <h3>Learn More About Our Subteams:</h3>
+      <ul id="team-list">
+        <a href="./kinetic.html">
+          <img src="crc_pictures/icons/electric.png" alt="" />
+          <li>Kinetic</li>
+        </a>
+        <a href="./sportsman.html">
+          <img src="crc_pictures/icons/tech.png" alt="" />
+          <li>Sportsman</li>
+        </a>
+        <a href="./firmware.html">
+          <img src="crc_pictures/icons/circuit.png" alt="" />
+          <li>Firmware</li>
+        </a>
+        <a href="./biz.html">
+          <img src="crc_pictures/icons/camera-setting.png" alt="" />
+          <li>Business & Media</li>
+        </a>
+      </ul>
+      <div id="pics">
+        <!--
           FORMAT FOR CARDS (everywhere it says NAME needs to be filled in)
           <div class = "card" onmouseover="NAME_pic.src='crc_pictures/headshots/NAME.jpg'"
           onmouseout="NAME_pic.src='crc_pictures/headshots/NAME-bw.jpg'">
@@ -80,132 +84,288 @@
             <p><button class="card_button">About Me</button></p>
           </div>
             -->
-      <!--Leads-->
-      <h2 class="team-leads-title">Team Leads</h2>
-      <div class="grid-container-images">
-        <div class="card"
-          onmouseover="Sofie_pic_tl.src='crc_pictures/headshots/Sofie.jpg'"
-          onmouseout="Sofie_pic_tl.src='crc_pictures/headshots/Sofie-bw.jpg'">
-          <div class='front-card'>
-            <img src="crc_pictures/headshots/Sofie-bw.jpg" id="Sofie_pic_tl"
-              width='250' alt="">
-            <h3>Sofie Halpern</h3>
-            <p>Team Lead</p>
-            <div style="margin: 24px 0;">
-              <a href="https://www.linkedin.com/in/sofie-halpern/" target="_blank"
-                rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+        <!--Leads-->
+        <h2 class="team-leads-title">Team Leads</h2>
+        <div class="grid-container-images">
+          <div
+            class="card"
+            onmouseover="Sofie_pic_tl.src='crc_pictures/headshots/Sofie.jpg'"
+            onmouseout="Sofie_pic_tl.src='crc_pictures/headshots/Sofie-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Sofie-bw.jpg"
+                id="Sofie_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Sofie Halpern</h3>
+              <p>Team Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="https://www.linkedin.com/in/sofie-halpern/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
             </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Sofie.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                Sofie Halpern
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
           </div>
-          <div class='back-card hidden'>
-            <p class='team-bio'></p>
+          <div
+            class="card"
+            onmouseover="Bruno_pic_tl.src='crc_pictures/headshots/Bruno.jpg'"
+            onmouseout="Bruno_pic_tl.src='crc_pictures/headshots/Bruno-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Bruno-bw.jpg"
+                id="Bruno_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Bruno Tassari</h3>
+              <p>Vice Team Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="https://www.linkedin.com/in/bruno-tassari-18928b19b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Bruno.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                Bruno Tassari
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
           </div>
-          <p><button class="card_button">About Me</button></p>
+          <div
+            class="card"
+            onmouseover="Ricky_pic_tl.src='crc_pictures/headshots/Ricky.jpg'"
+            onmouseout="Ricky_pic_tl.src='crc_pictures/headshots/Ricky-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Ricky-bw.jpg"
+                id="Ricky_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Ricky Wang</h3>
+              <p>Kinetic Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="http://www.linkedin.com/in/ricky-wang-819304182"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Ricky.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                Ricky Wang
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
+          </div>
+          <div
+            class="card"
+            onmouseover="Michelle_pic_tl.src='crc_pictures/headshots/Michelle.jpg'"
+            onmouseout="Michelle_pic_tl.src='crc_pictures/headshots/Michelle-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Michelle-bw.jpg"
+                id="Michelle_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Michelle Zhou</h3>
+              <p>Sportsman Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="https://www.linkedin.com/in/michelle-z-20b22b139/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Michelle.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                Michelle Zhou
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
+          </div>
+          <div
+            class="card"
+            onmouseover="Rochelle_pic_tl.src='crc_pictures/headshots/Rochelle.jpg'"
+            onmouseout="Rochelle_pic_tl.src='crc_pictures/headshots/Rochelle-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Rochelle-bw.jpg"
+                id="Rochelle_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Rochelle Barsz</h3>
+              <p>Firmware Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="http://www.linkedin.com/in/rochelle-barsz-311422219"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Rochelle.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                 Rochelle Barsz
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
+          </div>
+          <div
+            class="card"
+            onmouseover="edith_pic_tl.src='crc_pictures/headshots/Edith.jpg'"
+            onmouseout="edith_pic_tl.src='crc_pictures/headshots/Edith-bw.jpg'"
+          >
+            <div class="front-card">
+              <img
+                src="crc_pictures/headshots/Edith-bw.jpg"
+                id="edith_pic_tl"
+                width="250"
+                alt=""
+              />
+              <h3>Edith Chen</h3>
+              <p>Business and Media Lead</p>
+              <div style="margin: 24px 0">
+                <a
+                  href="https://www.linkedin.com/in/edith-chen-450159198/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="back-card hidden">
+              <h3>
+                <img
+                  src="crc_pictures/headshots/Edith.jpg"
+                  alt=""
+                  class="mini-photo"
+                />
+                 Edith Chen
+              </h3>
+              <p class="team-bio"></p>
+            </div>
+            <p><button class="card_button">About Me</button></p>
+          </div>
         </div>
-        <div class="card"
-          onmouseover="Bruno_pic_tl.src='crc_pictures/headshots/Bruno.jpg'"
-          onmouseout="Bruno_pic_tl.src='crc_pictures/headshots/Bruno-bw.jpg'">
-          <img src="crc_pictures/headshots/Bruno-bw.jpg" id="Bruno_pic_tl"
-            width='250' alt="">
-          <h3>Bruno Tassari</h3>
-          <p>Vice Team Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="https://www.linkedin.com/in/bruno-tassari-18928b19b/"
-              target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button class="card_button">About Me</button></p>
-        </div>
-        <div class="card"
-          onmouseover="Ricky_pic_tl.src='crc_pictures/headshots/Ricky.jpg'"
-          onmouseout="Ricky_pic_tl.src='crc_pictures/headshots/Ricky-bw.jpg'">
-          <img src="crc_pictures/headshots/Ricky-bw.jpg" id="Ricky_pic_tl"
-            width='250' alt="">
-          <h3>Ricky Wang</h3>
-          <p>Kinetic Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="http://www.linkedin.com/in/ricky-wang-819304182"
-              target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button class="card_button">About Me</button></p>
-        </div>
-        <div class="card"
-          onmouseover="Michelle_pic_tl.src='crc_pictures/headshots/Michelle.jpg'"
-          onmouseout="Michelle_pic_tl.src='crc_pictures/headshots/Michelle-bw.jpg'">
-          <img src="crc_pictures/headshots/Michelle-bw.jpg" id="Michelle_pic_tl"
-            width='250' alt="">
-          <h3>Michelle Zhou</h3>
-          <p>Sportsman Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="https://www.linkedin.com/in/michelle-z-20b22b139/"
-              target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button class="card_button">About Me</button></p>
-        </div>
-        <div class="card"
-          onmouseover="Rochelle_pic_tl.src='crc_pictures/headshots/Rochelle.jpg'"
-          onmouseout="Rochelle_pic_tl.src='crc_pictures/headshots/Rochelle-bw.jpg'">
-          <img src="crc_pictures/headshots/Rochelle-bw.jpg" id="Rochelle_pic_tl"
-            width='250' alt="">
-          <h3>Rochelle Barsz</h3>
-          <p>Firmware Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="http://www.linkedin.com/in/rochelle-barsz-311422219"
-              target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button class="card_button">About Me</button></p>
-        </div>
-        <div class="card"
-          onmouseover="edith_pic_tl.src='crc_pictures/headshots/Edith.jpg'"
-          onmouseout="edith_pic_tl.src='crc_pictures/headshots/Edith-bw.jpg'">
-          <img src="crc_pictures/headshots/Edith-bw.jpg" id="edith_pic_tl"
-            width='250' alt="">
-          <h3>Edith Chen</h3>
-          <p>Business and Media Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="https://www.linkedin.com/in/edith-chen-450159198/"
-              target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button class="card_button">About Me</button></p>
-        </div>
-      </div>
-      <p class='centered'> - Individual headshots and team photos in team gear
-        were taken by
-        Michelle Zhou -</p>
-    </div>
-  </div>
-  <div class="footer">
-    <div style="display: flex; flex-direction: row;">
-      <div>
-        <p class="footer_title"> Follow Us</p>
-        <a href="https://www.facebook.com/cucombatrobotics/" target="_blank">
-          <p class="footer-text"><img src="crc_pictures/icons/fb.png" class='footer-logo' alt='' />Facebook</p>
-        </a>
-        <a href="https://www.instagram.com/cucombatrobotics/?hl=en" target="_blank">
-          <p class="footer-text"><img src="crc_pictures/icons/insta.png" class='footer-logo' alt='' />Instagram</p>
-        </a>
-        <a href="https://www.linkedin.com/company/combat-robotics-at-cornell/" target="_blank">
-          <p class="footer-text" style="margin-bottom: 20px;"><img src="crc_pictures/icons/linkedin.png"
-              class='footer-logo' alt='' />LinkedIn</p>
-        </a>
-      </div>
-      <div style="border-left: 4px solid white; margin-left: 20px">
-        <p class="footer_title">Contact Us</p>
-        <p class='footer-text'> <a href="mailto:combatrobotics@cornell.edu">combatrobotics@cornell.edu</a>
+        <p class="centered">
+          - Individual headshots and team photos in team gear were taken by
+          Michelle Zhou -
         </p>
-        <br>
-        <p class='footer-text'><a href="./accessibility.html">Accessibility Assistance</a></p>
       </div>
     </div>
-    <div>
-      <img src="crc_pictures/white-logo.png" alt="">
+    <div class="footer">
+      <div style="display: flex; flex-direction: row">
+        <div>
+          <p class="footer_title">Follow Us</p>
+          <a href="https://www.facebook.com/cucombatrobotics/" target="_blank">
+            <p class="footer-text">
+              <img
+                src="crc_pictures/icons/fb.png"
+                class="footer-logo"
+                alt=""
+              />Facebook
+            </p>
+          </a>
+          <a
+            href="https://www.instagram.com/cucombatrobotics/?hl=en"
+            target="_blank"
+          >
+            <p class="footer-text">
+              <img
+                src="crc_pictures/icons/insta.png"
+                class="footer-logo"
+                alt=""
+              />Instagram
+            </p>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/combat-robotics-at-cornell/"
+            target="_blank"
+          >
+            <p class="footer-text" style="margin-bottom: 20px">
+              <img
+                src="crc_pictures/icons/linkedin.png"
+                class="footer-logo"
+                alt=""
+              />LinkedIn
+            </p>
+          </a>
+        </div>
+        <div style="border-left: 4px solid white; margin-left: 20px">
+          <p class="footer_title">Contact Us</p>
+          <p class="footer-text">
+            <a href="mailto:combatrobotics@cornell.edu"
+              >combatrobotics@cornell.edu</a
+            >
+          </p>
+          <br />
+          <p class="footer-text">
+            <a href="./accessibility.html">Accessibility Assistance</a>
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="crc_pictures/white-logo.png" alt="" />
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 
-<script src='./scripts/team-bios.js'></script>
-
+  <script src="./scripts/team-bios.js"></script>
 </html>
