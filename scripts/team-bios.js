@@ -12,6 +12,14 @@ const bios = {
     "james" : "Hobbies: Basketball, volleyball. Clubs: Digital Humanities (NLP research).",
     "mo" : "Playing guitar, Persian Student Organization, Snowboarding (Cornell Skiing and Snowboarding club)",
     "spencer" : "Outside of CRC, I'm involved in Life Changing Labs, Speech and Debate Society, in addition to ACSU. One of my passions is making Videogames for which I lead a game dev group and lead a strategy gaming group. ",
+    "marcus" : "Outside of school, I am a part of NROTC and enjoy spending time outdoors, model making with LEGOs, reading, and other general nerd activities.",
+    "claire" : "I enjoy performing Chinese yoyo, painting, and playing Terraria",
+    "charles" : "I like to play piano outside of CRC",
+    "kevin" : "Dance, Mechanical keyboards",
+    "molly" : "I play sax in the marching band and I also like to play violin and guitar.",
+    "richardj" : "Outside CRC, I play chess, draw, do personal projects and practice coding.",
+    "shubham" : "Outside of CRC, I do research in the field of robotics and work as a math tutor.",
+    
 }
 
 let flip = (card) => {
@@ -36,6 +44,8 @@ for (let card of document.getElementsByClassName("card")) {
     back.getElementsByTagName('p')[0].innerHTML = bio;
     if (bio) {
         card.onclick = () => flip(card) //.getElementsByClassName("card_button")[0].onclick = () => flip(card)
+    } else {
+        card.style = "cursor: auto";
     }
 }
 

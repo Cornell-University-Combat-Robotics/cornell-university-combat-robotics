@@ -226,6 +226,15 @@ hr {
 	filter: drop-shadow(10px 10px 0px gainsboro);
 }
 
+.team-info div {
+	width: 25%;
+}
+
+.team-info img {
+	display: inline-block;
+	width: 60%;
+}
+
 .full-team-photo {
 	display: inline-block;
 	flex-grow: 1;
