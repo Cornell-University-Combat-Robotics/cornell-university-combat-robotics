@@ -86,13 +86,18 @@
         <div class="card"
           onmouseover="Sofie_pic_tl.src='crc_pictures/headshots/Sofie.jpg'"
           onmouseout="Sofie_pic_tl.src='crc_pictures/headshots/Sofie-bw.jpg'">
-          <img src="crc_pictures/headshots/Sofie-bw.jpg" id="Sofie_pic_tl"
-            width='250' alt="">
-          <h3>Sofie Halpern</h3>
-          <p>Team Lead</p>
-          <div style="margin: 24px 0;">
-            <a href="https://www.linkedin.com/in/sofie-halpern/" target="_blank"
-              rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <div class='front-card'>
+            <img src="crc_pictures/headshots/Sofie-bw.jpg" id="Sofie_pic_tl"
+              width='250' alt="">
+            <h3>Sofie Halpern</h3>
+            <p>Team Lead</p>
+            <div style="margin: 24px 0;">
+              <a href="https://www.linkedin.com/in/sofie-halpern/" target="_blank"
+                rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class='back-card hidden'>
+            <p class='team-bio'></p>
           </div>
           <p><button class="card_button">About Me</button></p>
         </div>
@@ -200,5 +205,7 @@
     </div>
   </div>
 </body>
+
+<script src='./scripts/team-bios.js'></script>
 
 </html>
