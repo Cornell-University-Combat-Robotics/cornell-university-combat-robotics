@@ -29,9 +29,11 @@ em {
 .top_menu {
 	overflow: hidden;
 	padding-top: 5px;
+	margin: 0px auto;
 	margin-top: -5px;
 	padding-bottom: 7.5px;
 	padding-left: 42px;
+	max-width: 1500px;
 	/* border-bottom: 3px solid lightgray; */
 	/* border-radius: 30px; */
 	/* top: 0px;
@@ -215,6 +217,7 @@ hr {
 
 .subteam-picture {
 	border-radius: 20px;
+	object-fit: cover;
 }
 
 .team-info {

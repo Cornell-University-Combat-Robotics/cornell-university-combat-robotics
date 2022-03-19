@@ -27,6 +27,14 @@ const bios = {
     "richardk": "I play the violin, and generally enjoy playing/listening to music. One of my hobbies is also film photography.",
     "sebastian": "I'm a part of Residential Student Congress, Club Swimming, and the Varsity sports film crew",
     "shawn": "Meinig Cornell Family National Scholar, Global Market Analysts Cornell, Mapping Society at Cornell",
+    "maya": "I am an RA in Just About Music, I write newletters for CU IMAGE, and I'm a Meinig Scholar. I also love to sing and write songs on the piano in my free time!",
+    "alex": "Video Games, Phi Delta Theta, TA'ing for classes, cooking, personal finance",
+    "ashley": "APO, playing the flute/piccolo",
+    "kaitlyn": "Outside of CRC, I am involved in Cornell Financial Analysts, my social sorority, and a Dyson peer mentor. Some of my hobbies include drawing, hiking, and making pasta from scratch.",
+    "lucien": "Outside of CRC, I design video games, go on walks/runs, and cook real food.",
+    "ruby": "Outside of CRC I'm a part of Science Olympiad at Cornell and GMAC",
+
+
 }
 
 let flip = (card) => {
