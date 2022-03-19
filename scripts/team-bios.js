@@ -19,7 +19,14 @@ const bios = {
     "molly" : "I play sax in the marching band and I also like to play violin and guitar.",
     "richardj" : "Outside CRC, I play chess, draw, do personal projects and practice coding.",
     "shubham" : "Outside of CRC, I do research in the field of robotics and work as a math tutor.",
-    
+    "blaze" : "Electric skateboarding, unicycling, cyber security, linguistics, video games.",
+    "ash": "Outside of CRC, member of Autoboat",
+    "eshita" : "",
+    "katie": "Outside of CRC I work part-time at Mac's Cafe and the Terrace Restaurant, and I volunteer as a mentor and transportation officer for College Mentors for Kids. In my spare time I also enjoy running, rock climbing, and painting",
+    "luke": "Skateboarding, videogame development.",
+    "richardk": "I play the violin, and generally enjoy playing/listening to music. One of my hobbies is also film photography.",
+    "sebastian": "I'm a part of Residential Student Congress, Club Swimming, and the Varsity sports film crew",
+    "shawn": "Meinig Cornell Family National Scholar, Global Market Analysts Cornell, Mapping Society at Cornell",
 }
 
 let flip = (card) => {
