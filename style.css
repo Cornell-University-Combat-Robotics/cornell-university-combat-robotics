@@ -590,3 +590,35 @@ li {
 	width: 100%;
 	transform: rotate(0);
 }
+
+/* Slideshow section */
+
+#slideshow {
+	position: relative;
+}
+
+#slideshow div {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+}
+
+#slideshow img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+}
+
+.fading {
+	animation: fade-out 0.5s;
+}
+
+#fading {
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fade-out {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
