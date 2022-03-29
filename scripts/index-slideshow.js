@@ -9,7 +9,7 @@ const fadingSlide = document.getElementById("fading");
 const slideImages = {
   "crc_pictures/webuildrobots.jpg": "the team building robots",
   "crc_pictures/webuildrobots2.jpg": "the team building robots again",
-  "crc_pictures/mostbuiltrobot.jpg": "a team member intimidating a robot",
+  "crc_pictures/mostbuiltrobot.jpg": "a robot built",
 };
 
 // current index in slideImages' keys
