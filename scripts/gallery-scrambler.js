@@ -31,7 +31,16 @@ let imagePathsToAlt = {
   "hat": "spencer gets a new hat",
   "testbox": "assembly of our testbox",
   "stik": "the death of big stick during testing",
-  "cardpattern": "our promotional testing event cards"
+  "cardpattern": "our promotional testing event cards",
+  "compfood" : "team members enjoying food after competition",
+  "cutebot" : "picture of competition robot dripped out",
+  "cones" : "team prepped for competition",
+  "wax" : "team posing outside of a shop",
+  "compteam": "team right before competition",
+  "compteam1": "team picture before competition",
+  "compcrew": "crew prepared for competition",
+  "huddle": "team huddle at competition",
+  "comprepair": "team repairing bot at competition"
 };
 const refreshImagePaths = () => {
   imagePaths = Object.keys(imagePathsToAlt)
@@ -42,11 +51,21 @@ function rotateAndSetImages() {
   var pics = document.getElementsByClassName("gallery-img")
   console.log(pics)
   Array.from(pics).forEach((pic) => {
-    var randomNum = Math.random() * 12 - 6
+    // var randomNum = Math.random() * 12 - 6
     //pic.style.setProperty("transform", `rotate(${randomNum}deg)`)
     var imagePath = imagePaths.pop()
     pic.setAttribute('src', './gallery-pics/' + imagePath + '.jpg')
     pic.setAttribute('alt', imagePathsToAlt[imagePath])
-    console.log(pic)
+    // console.log(pic)
+  })
+}
+function generateGallery() {
+  refreshImagePaths();
+  imagePaths.forEach((imagePath) => {
+    var galleryElement = document.createElement("img");
+    galleryElement.setAttribute('src', './gallery-pics/' + imagePath + '.jpg');
+    galleryElement.setAttribute('class', 'gallery-img');
+    galleryElement.setAttribute('alt', imagePathsToAlt[imagePath]);
+    document.getElementById("gallery").appendChild(galleryElement);
   })
 }
