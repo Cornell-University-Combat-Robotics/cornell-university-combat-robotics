@@ -10,6 +10,7 @@ const slideImages = {
   "crc_pictures/webuildrobots.jpg": "the team building robots",
   "crc_pictures/webuildrobots2.jpg": "the team building robots again",
   "crc_pictures/mostbuiltrobot.jpg": "a robot built",
+  "crc_pictures/webuildrobots3.jpg": "robot repairs at comp"
 };
 
 // current index in slideImages' keys
