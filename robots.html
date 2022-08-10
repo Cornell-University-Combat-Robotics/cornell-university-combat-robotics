@@ -7,7 +7,63 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
-<script src="./gallery-scrambler.js"></script>
+
+<script>
+  const RobotData = {
+    Richard: {
+      robotName: "Richard",
+      description: "Description TBD.",
+      imgPath: "richard.png"
+    },
+    Lance: {
+      robotName: "Lance",
+      description: "Description TBD.",
+      imgPath: "lance.png"
+    },
+    Manny: {
+      robotName: "Manny",
+      description: "Manny is a sportsman bot featuring a surgical-tubing powered hammer + flipper combination weapon actuated with a cam-and-follower mechanism.",
+      imgPath: "manny.png"
+    },
+    Donatello: {
+      robotName: "Donatello",
+      description: "Donatello is a 15 lb hammer bot. Its notable features include a composite shell, instead of a more traditional aluminum chassis, and turtle shaped armor.",
+      imgPath: "donatello.png"
+    },
+    Rocky: {
+      robotName: "Rocky",
+      description: "Just like the movie athlete, Rocky has quick feet and even quicker hands. Rocky features a pneumatic operated, spiked ram with a two wheel, invertible drive system.",
+      imgPath: "rocky.png"
+    },
+    HeaveHo: {
+      robotName: "Heave Ho",
+      description: "A 3lb bot that utilizes a pulley-motor system to launch opposing robots via upwardly accelerating its front platform. Heave-Ho is designed for optimal positioning and rotates freely on its stabilizing balls.",
+      imgPath: "heave-ho.png"
+    },
+    SwissCheese: {
+      robotName: "Swiss Cheese",
+      description: "Swiss Cheese (Gruyère) is a 3lb bot with two powered saw blades for weapons, two wheels plus a ball roller for the drive system, and 3D-printed frontal rollers for a passive defense system. Its name is derived from the numerous holes made in the V-shaped chassis to meet the weight class requirements. ",
+      imgPath: "swiss-cheese.png"
+    },
+    Wabbit: {
+      robotName: "Wabbit",
+      description: "Wabbit is cute and compact, but beware - you may need a holy hand grenade to defeat this vertical spinner. Its teeth are sharp. It leaps... about yay far!",
+      imgPath: "wabbit.png"
+    },
+  }
+
+  const updateModal = (data) => {
+    document.getElementById("robot-title").innerHTML = data.robotName;
+    document.getElementById("robot-img").src = `crc_pictures/robot-renders/${data.imgPath}` ;
+    document.getElementById("robot-desc").innerHTML = data.description;
+    toggleModal(true);
+  }
+
+  const toggleModal = (show) => document.getElementById("robot-info").style =
+   show ? "display: block; animation: fade-in 0.2s;" : "display: none; animation: none"
+ 
+</script>
+
 
 <body>
   <div id="menu_bar" class="top_menu">
@@ -39,36 +95,59 @@
   <div class='content'>
     <h1 class='big-title'>Robots</h1>
     <section class="robot-gallery">
-      <div class="robot-card">
-        <h3 class="robot-name">Manny <span>the Menace</span></h3>
-        <img src="crc_pictures/Full_Assembly_2020.png" alt="">
-        <p class="robot-vintage">2022</p>
-        <button class="learn-more">Learn More</button>
+      <div class="robot-card" onclick="updateModal(RobotData.Richard)">
+        <h3 class="robot-name">Richard</h3>
+        <img src="crc_pictures/robot-renders/richard.png" alt="">
+        <p class="robot-vintage">2021-2022</p>
       </div>
-      <div class="robot-card">
-        <h3 class="robot-name">Richard <span>the Ripper</span></h3>
-        <img src="crc_pictures/Full_Assembly_2020.png" alt="">
-        <p class="robot-vintage">2022</p>
-        <button class="learn-more">Learn More</button>      
-      </div>
-      <div class="robot-card">
+      <div class="robot-card" onclick="updateModal(RobotData.Lance)">
         <h3 class="robot-name">Lance</h3>
-        <img src="crc_pictures/Full_Assembly_2020.png" alt="">
-        <p class="robot-vintage">2022</p>
-        <button class="learn-more">Learn More</button>
+        <img src="crc_pictures/robot-renders/lance.png" alt="">
+        <p class="robot-vintage">2021-2022</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Manny)">
+        <h3 class="robot-name">Manny</h3>
+        <img src="crc_pictures/robot-renders/manny.png" alt="">
+        <p class="robot-vintage">2020-2021</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Donatello)">
+        <h3 class="robot-name">Donatello</h3>
+        <img src="crc_pictures/robot-renders/donatello.png" alt="">
+        <p class="robot-vintage">2019-2021</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Rocky)">
+        <h3 class="robot-name">Rocky</h3>
+        <img src="crc_pictures/robot-renders/rocky.png" alt="">
+        <p class="robot-vintage">Summer 2021 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.HeaveHo)">
+        <h3 class="robot-name">Heave-Ho</h3>
+        <img src="crc_pictures/robot-renders/heave-ho.png" alt="">
+        <p class="robot-vintage">Summer 2021 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.SwissCheese)">
+        <h3 class="robot-name">Swiss Cheese</h3>
+        <img src="crc_pictures/robot-renders/swiss-cheese.png" alt="">
+        <p class="robot-vintage">Summer 2020 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Wabbit)">
+        <h3 class="robot-name">Wabbit</h3>
+        <img src="crc_pictures/robot-renders/wabbit.png" alt="">
+        <p class="robot-vintage">Summer 2020 Design Project</p>
       </div>
     </section>
     
-    <!-- Section for the robot info modals -->
-    <section id="manny-info" class="robot-modal">
-      <div>
-        <h2>Experience <em>Manny</em>.</h2> <button class="close-modal">X</button>
-      </div>
-      <br>
-      <p>Manny manny manny Manny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny mannyManny manny manny</p>
-      <img src="crc_pictures/manny with the burrito what will he do.png" alt="">
-      <p>MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAny</p>
-    </section>
+    <!-- Section for the robot info modal -->
+    <div id="robot-info" class="robot-modal-bg" style="display: none;" onclick="toggleModal(false)">
+      <section class="modal-panel" onclick="event.stopPropagation() /* this stops closing by bubbling to bg  */"> 
+        <h2 id="robot-title"></h2>
+        <button class="close-modal" onclick="toggleModal(false)">X</button>
+        <div style="display: flex; flex-direction: row; ">
+          <img id="robot-img" src="crc_pictures/manny with the burrito what will he do.png" alt="">
+          <p id="robot-desc"></p>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 
