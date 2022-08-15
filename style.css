@@ -672,13 +672,13 @@ li {
 .robot-card {
 	display: inline-block;
 	flex-grow: 1;
-	margin: 10px 20px;
+	margin: 10px 15px;
 	padding: 10px 20px;
 	background-color: white;
 	filter: drop-shadow(2px 2px 5px grey);
 	border-radius: 10px;
 	height: 300px;
-	max-width: 200px;
+	max-width: 225px;
 	cursor: pointer;
 	transition: 0.1s;
 }
