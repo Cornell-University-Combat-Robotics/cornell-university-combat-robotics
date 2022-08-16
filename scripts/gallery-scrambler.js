@@ -26,7 +26,7 @@ let imagePathsToAlt = {
   "promo": "sportsman team posing with our promo cards",
   "arduino": "firmware debugging an arduino",
   "richard": "kinetic posing with richard",
-  "bizsolder": "business and media soldering",
+  "bizsolder": "Marketing soldering",
   "itsrichard": "team members posing with richard",
   "hat": "spencer gets a new hat",
   "testbox": "assembly of our testbox",
