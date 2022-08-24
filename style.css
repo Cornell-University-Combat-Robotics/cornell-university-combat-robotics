@@ -459,6 +459,29 @@ a:hover {
 	font-size: 1.0em;
 }
 
+.application-button {
+	padding: 1rem;
+	font-size: 1.5rem;
+	margin: 0rem 1rem;
+	background-color: white;
+	color: maroon;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.application-button:hover {
+	transform: scale(1.05);
+}
+
+.application-banner {
+	background-color: maroon;
+	color: white;
+	padding: 20px 12%;
+	clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+	text-align: center;
+}
 .sponsor-page-button img {
 	height: 50px;
 }
