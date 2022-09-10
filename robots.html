@@ -54,7 +54,12 @@
       robotName: "Fortunate Son",
       description: "Description TBD",
       imgPath: "under-construction.png"
-    }
+    },
+    FlameRoller: {
+      robotName: "Flame Roller",
+      description: "Let's get cooking! Featuring cutting edge technology, Flame Roller is ready to roast the competition. She's not here to make friends, she’s here to win.",
+      imgPath: "FlameRollerPNG.png"
+    },
   }
 
   const updateModal = (data) => {
@@ -157,6 +162,11 @@
       <div class="robot-card" onclick="updateModal(RobotData.FortunateSon)">
         <h3 class="robot-name">Fortunate Son</h3>
         <img src="crc_pictures/robot-renders/under-construction.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Wabbit)">
+        <h3 class="robot-name">FlameRoller</h3>
+        <img src="crc_pictures/robot-renders/FlameRollerPNG.png" alt="">
         <p class="robot-vintage">Summer 2022 Design Project</p>
       </div>
     </section>
