@@ -33,19 +33,16 @@ const bios = {
     "kaitlyn": "Outside of CRC, I am involved in Cornell Financial Analysts, my social sorority, and a Dyson peer mentor. Some of my hobbies include drawing, hiking, and making pasta from scratch.",
     "lucien": "Outside of CRC, I design video games, go on walks/runs, and cook real food.",
     "ruby": "Outside of CRC I'm a part of Science Olympiad at Cornell and GMAC",
-
-
+    "william": "Meow meow meow, meow meow meow meow. Meow meow mow -- CRC meow meow. Mrrm.",
 }
 
 let flip = (card) => {
-    let front = card.getElementsByClassName('front-card')[0];
-    let back = card.getElementsByClassName('back-card')[0];
-    if (front.className == 'front-card') {
-        front.className = 'front-card hidden'
-        back.className = 'back-card'
+    let back = card.getElementsByClassName('team-bio')[0];
+    console.log(back)
+    if (back.className == 'team-bio hidden') {
+        back.className = 'team-bio'
     } else {
-        front.className = 'front-card'
-        back.className = 'back-card hidden'
+        back.className = 'team-bio hidden'
     }
 }
 
@@ -55,8 +52,8 @@ for (let card of document.getElementsByClassName("card")) {
     // get bio
     let bio = name in bios ? bios[name] : "" // default to blank
     // set bio
-    let back = card.getElementsByClassName('back-card')[0]
-    back.getElementsByTagName('p')[0].innerHTML = bio;
+    let back = card.getElementsByClassName('team-bio')[0]
+    back.innerHTML = bio;
     if (bio) {
         card.onclick = () => flip(card) //.getElementsByClassName("card_button")[0].onclick = () => flip(card)
     } else {

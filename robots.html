@@ -12,12 +12,12 @@
   const RobotData = {
     Richard: {
       robotName: "Richard",
-      description: "Description TBD.",
+      description: "Richard is a vertical spinner robot whose weapon destroys the opponent with unmatched speed and power. The enemy that trembles before him gets smashed into the air, only to get crushed a second time upon impact with the ground. His metal armor protects him from most attacks and is decorated with an intimidating flair.",
       imgPath: "richard.png"
     },
     Lance: {
       robotName: "Lance",
-      description: "Description TBD.",
+      description: "Lance, like their namesake, tosses any opponent out of the way. Lance's powerful flipper clears everyone from their path, while their tough, boxy armor keeps them going through any hit.",
       imgPath: "lance.png"
     },
     Manny: {
@@ -52,19 +52,34 @@
     },
     FortunateSon: {
       robotName: "Fortunate Son",
-      description: "Description TBD",
-      imgPath: "under-construction.png"
+      description: "Make sure you look up to the sky when fighting Fortunate Son! Staying out of reach of the opponent's weapon, Fortunate Son rains fire down on the enemy rendering them useless. ",
+      imgPath: "fortunateson.png"
     },
     FlameRoller: {
       robotName: "Flame Roller",
-      description: "Let's get cooking! Featuring cutting edge technology, Flame Roller is ready to roast the competition. She's not here to make friends, she’s here to win.",
+      description: "Let's get cooking! Featuring cutting edge technology, Flame Roller is ready to roast the competition. She's not here to make friends, she's here to win.",
       imgPath: "FlameRollerPNG.png"
     },
     DumbAndDumber: {
-      robotName: "Dumb And Dumber",
-      description: "Description TBD",
+      robotName: "Dumb n' Dumber",
+      description: "These two idiots are chained together in an attempt to wrap around the enemy. Whether it works or not, it is going to be a blast to watch!",
       imgPath: "dumbanddumber.png"
     },
+    Knuckles: {
+      robotName: "Knuckles",
+      description: "Group 5 is excited to introduce Knuckles: a dangerous combat robot featuring 2 wedges, 2 spikes, 1 flipper, and 1 flamethrower. Prepare to be scorched, flipped, and stabbed at the hands of this short-tempered bot.",
+      imgPath: "knuckles.png"
+    },
+    Logobot: {
+      robotName: "Logobot",
+      description: "This mean red fighting machine represents the true fighting spirit of CRC. Our mascot proves itself to be a fearsome foe. Its opponents better be ready for a CRCerious battle!",
+      imgPath: "logobot.png"
+    },
+    BlackBeetle: {
+      robotName: "Black Beetle",
+      description: " Black Beetle is a 3lb bot that features a “S” shaped arm. Moving swiftly, Black Beetle will get under the opponent and flip it high into the air!",
+      imgPath: "blackbeetle.png"
+    }
   }
 
   const updateModal = (data) => {
@@ -141,7 +156,42 @@
       </div>
     </section>
 
-    <h2>Design Projects</h2>
+    <h2>Design Projects (2022)</h2>
+
+    <section class="robot-gallery">
+      <div class="robot-card" onclick="updateModal(RobotData.FortunateSon)">
+        <h3 class="robot-name">Fortunate Son</h3>
+        <img src="crc_pictures/robot-renders/fortunateson.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.FlameRoller)">
+        <h3 class="robot-name">Flame Roller</h3>
+        <img src="crc_pictures/robot-renders/FlameRollerPNG.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.DumbAndDumber)">
+        <h3 class="robot-name">Dumb n' Dumber</h3>
+        <img src="crc_pictures/robot-renders/dumbanddumber.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Knuckles)">
+        <h3 class="robot-name">Knuckles</h3>
+        <img src="crc_pictures/robot-renders/knuckles.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.Logobot)">
+        <h3 class="robot-name">Logobot</h3>
+        <img src="crc_pictures/robot-renders/logobot.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+      <div class="robot-card" onclick="updateModal(RobotData.BlackBeetle)">
+        <h3 class="robot-name">Black Beetle</h3>
+        <img src="crc_pictures/robot-renders/blackbeetle.png" alt="">
+        <p class="robot-vintage">Summer 2022 Design Project</p>
+      </div>
+    </section>
+
+    <h2>Design Projects (2020-2021)</h2>
 
     <section class="robot-gallery">
       <div class="robot-card" onclick="updateModal(RobotData.Rocky)">
@@ -163,21 +213,6 @@
         <h3 class="robot-name">Wabbit</h3>
         <img src="crc_pictures/robot-renders/wabbit.png" alt="">
         <p class="robot-vintage">Summer 2020 Design Project</p>
-      </div>
-      <div class="robot-card" onclick="updateModal(RobotData.FortunateSon)">
-        <h3 class="robot-name">Fortunate Son</h3>
-        <img src="crc_pictures/robot-renders/under-construction.png" alt="">
-        <p class="robot-vintage">Summer 2022 Design Project</p>
-      </div>
-      <div class="robot-card" onclick="updateModal(RobotData.Wabbit)">
-        <h3 class="robot-name">FlameRoller</h3>
-        <img src="crc_pictures/robot-renders/FlameRollerPNG.png" alt="">
-        <p class="robot-vintage">Summer 2022 Design Project</p>
-      </div>
-      <div class="robot-card" onclick="updateModal(RobotData.DumbAndDumber)">
-        <h3 class="robot-name">DumbAndDumber</h3>
-        <img src="crc_pictures/robot-renders/dumbanddumber.jpg" alt="">
-        <p class="robot-vintage">Summer 2022 Design Project</p>
       </div>
     </section>
     

@@ -8,9 +8,8 @@
 } */
 body {
 	margin: 0px auto;
-	margin-top: 10px;
   font-family: 'Fredoka', sans-serif;
-  font-size: 18px;
+	font-size: 1rem;
 }
 
 .content {
@@ -30,19 +29,17 @@ em {
 	overflow: hidden;
 	padding-top: 5px;
 	margin: 0px auto;
-	margin-top: -5px;
 	padding-bottom: 7.5px;
 	padding-left: 42px;
 	max-width: 1500px;
-	/* border-bottom: 3px solid lightgray; */
-	/* border-radius: 30px; */
-	/* top: 0px;
-	background-color: white
-	position: sticky; */
+	border-bottom: 1px solid grey;
+		position: sticky;
+		top: 0rem;
+		background-color: white;
+		z-index: 100;
 }
 .top_menu-right a {
 	float: left;
-	font-size: 20px;
 	font-family: Verdana;
 	font-weight: 400;
 	text-align: center;
@@ -70,7 +67,7 @@ em {
 
 .top_menu img {
 	transition: 0.3s;
-	height: 60px;
+	height: 3rem;
 	width: auto;
 }
 
@@ -114,7 +111,7 @@ hr {
 }
 
 .hidden {
-	display: none;
+	opacity: 0;
 }
 
 .timeline {
@@ -135,12 +132,8 @@ hr {
 	margin-bottom: 60px;
 }
 
-.mini-photo {
-	display: none;
-	height: 6em;
-	width: 100%;
-	object-fit: cover;
-	
+.team-card-pic {
+	border-radius: 1rem 1rem 0rem 0rem;
 }
 
 .flex-gallery div {
@@ -308,15 +301,10 @@ hr {
 	font-family: Verdana;
 }
 
-.grid-container-images {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-	text-align: center;
-	justify-content: space-evenly;
-	grid-column-gap: 10px;
-	font-family: Verdana;
-	margin-bottom: 120px;
-	margin-left: 50px;
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .faq {
@@ -400,19 +388,32 @@ button.link {
 
 /*Styling for the Cards on the Team Page */
 .card {
+	position: relative;
 	width: 250px;
 	height: 440px;
-	margin-bottom: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 4px 0 grey;
+		text-align: center;
 	cursor: pointer;
+	border-radius: 1rem;
+		margin: 1rem;
+		transition: 0.1s;
+		overflow: hidden;
+	}
+	
+	.card:hover {
+		background-color: #ebebeb;
 }
 
 .team-bio {
+	position: absolute;
+		bottom: -1.2rem;
 	text-align: left;
 	font-size: 0.9em;
 	padding: 10px;
-	height: 266px;
-	transition: 0.5s;
+	height: 40%;
+		background-color: rgba(0, 0, 0, 0.75);
+		color: white;
+		transition: 0.25s;
 }
 
 a {
